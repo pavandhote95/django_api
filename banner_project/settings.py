@@ -146,4 +146,9 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.JSONRenderer',
     ]
 }
-CORS_ALLOWED_ORIGINS_ALL = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:56291",  # Add the origin of your Flutter web app
+    "http://127.0.0.1:9101"   # Add the origin of your Flutter DevTools if needed
+]
